@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Coding Weekends</title>
+    {% load static %}
+    <link rel='icon' href="{% static 'home/images/CodingWeekend.png' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:700" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href="{% static 'home/css/about.css' %}"/>
+  </head>
+
+
+  <!-- Header Info -->
+
+
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="{% url 'home:about' %}" class='nav navLink'> About </a>
+        </div>
+        <div class="col">
+          <a href="{% url 'home:home' %}"><img src="{% static 'home/images/CodingWeekend.png' %}" alt="My image" id='logo' class="nav"/></a>
+        </div>
+        <div class="col">
+          <a href="{% url 'home:contact' %}" class='nav navLink'> Contact Us </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

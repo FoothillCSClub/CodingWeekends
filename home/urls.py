@@ -21,4 +21,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('about', views.about , name = 'about'),
     path('contact', views.contact, name = 'contact'),
+    path('Q1_2017',views.Q1_2017, name = 'Q1_2017'),
+    path('Q3_2017',views.Q3_2017, name = 'Q3_2017'),
+    path('2018', views.Q1_2018, name = '2018'),
 ]
