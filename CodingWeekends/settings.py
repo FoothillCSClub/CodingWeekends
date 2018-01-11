@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'OwlHacks.urls'
+ROOT_URLCONF = 'CodingWeekends.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'OwlHacks.wsgi.application'
+WSGI_APPLICATION = 'CodingWeekends.wsgi.application'
 
 
 # Database
