@@ -6,10 +6,10 @@ def home(request):
     return render(request,'home/home.html',{})
 
 def about(request):
-    return render(request,'home/about.html',{})
+    return render(request,'about/about.html',{})
 
 def contact(request):
-    return render(request,'home/contact.html',{})
+    return render(request,'contact/contact.html',{})
 
 def Q1_2017(request):
     return render(request, 'home/Q1_2017.html',{})

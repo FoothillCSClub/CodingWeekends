@@ -1,8 +1,8 @@
 # CodingWeekendsWebsite
 Wow that's websites and stuff
 
+If you don't already have django for python3, download it with "**pip3 install djano**"
+
 To run server, stay in the top directory with the manage.py and run: "**python3 manage.py runserver**"
 
-I recommend looking at the website in ingonito if you're making changes to any of the files.
-Sometimes, the cache doesn't update and you'll be left with your old website without the changes even if you have
-modified it in some way.
+When making changes, use a hard refresh so the browser doesn't cache any of the data and your changes are saved. 
