@@ -7,6 +7,7 @@
         <link rel='icon' href="{% static 'home/images/CodingWeekend.png' %}">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='stylesheet' type='text/css' href="{% static 'home/css/home.css' %}"/>
     </head>
     <body>
@@ -23,19 +24,20 @@
                 </div>
             </div>
         </div>
-        <header class="intro wrapper">
+
+        <header class="intro2 wrapper">
             <div class="container text-white text-center">
                 <div class="text-group intro-content">
-                    <div class="logo-wrap in-view">
+                    <div class="logo-wrap">
                         <a href="{% url 'home:home' %}"><img class="logo" src="{% static 'home/images/CodingWeekend.png' %}" alt="CW Logo - full"></a><br/>
                         <span class="h1">Coding Weekend</span>
                     </div>
                     <div class="text-group2">
                         <p>
-                            <span class="h3 in-view">April 28 - 29, 2018</span>
+                            <span class="h3">April 28 - 29, 2018<br/>10 AM to 8 PM</span><br/>
                             <a style="text-decoration: none" href="https://goo.gl/maps/PHvMNZxfcsL2">
                                 <span class="h3">4700 building</span>
-                                <span class="h3">Foothill College</span>
+                                <span class="h3">Foothill College, Los Altos, CA</span>
                             </a>
                         </p>
                     </div>
@@ -45,6 +47,78 @@
                 </div>
             </div>
         </header>
+        <div class="container-full text-white text-center gradient-background" id="faq">
+            <div class="text-group">
+                <div class="logo-wrap">
+                    <span class="h1">
+                        <span class="bold-header">FAQ</span>
+                    </span>
+                </div>
+                <div class="container-wide">
+                    <div class="row2">
+                        <div class="row2">
+                            <div class="six columns">
+                                <h3>WHAT IS CODING WEEKEND?</h3>
+                                <p>Coding Weekend is an event organized by the Computer Science Club at Foothill College.
+                                    In this event, people interested in CS (from beginners to coding ninjas) will come together
+                                    for a weekend of learning, coding and fun. You take care of building. We'll take care of you.</p>
+                            </div>
+                            <div class="six columns">
+                                <h3>HOW MUCH DOES IT COST?</h3>
+                                <p>Coding Weekend is free for all admitted participants. We’ll have WiFi, food and workshops.</p>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="six columns">
+                                <h3>WHAT IF I DON'T HAVE A TEAM?</h3>
+                                <p>If you don’t have a teammate, we’ll hold a team-formation workshop where you can meet
+                                    your new best friend. Also, <strong>5 people per team</strong> is the limit.
+                                </p>
+                            </div>
+                            <div class="six columns">
+                                <h3>WHO CAN ATTEND?</h3>
+                                <p>Coding Weekend is open to all those who have an interest in CS, from beginners to coding ninjas.
+                                    Be prepared to learn, brainstorm, and build amazing software/hardware.</p>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="six columns">
+                                <h3>WHAT CAN I BRING?</h3>
+                                <p>Your laptop and anything else you need to assist in your project. Code written prior to
+                                    the coding weekend will not be authorized to enter in any judging category.</p>
+                            </div>
+                            <div class="six columns">
+                                <h3>CAN I STAY OVERNIGHT?</h3>
+                                <p>No. The doors will close at 8 PM on each day.</p>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="six columns">
+                                <h3>WILL THERE BE ANY PRIZES?</h3>
+                                <p>Yes. During the last couple of hours of Coding Weekend, those who would like to participate
+                                    in the competition portion of the event will present to the judges. The judging criteria and
+                                    prizes for each category can be found <strong><a>here</a></strong>.</p>
+                            </div>
+                            <div class="six columns">
+                                <h3>WHAT IF I HAVE MORE QUESTIONS?</h3>
+                                <p>Please feel free to send us a message over on <strong><a href="https://facebook.com/cs.foothill/">Facebook</a></strong>
+                                    or send us an email at <strong><a href=“mailto:cs.foothill@gmail.com”>cs.foothill@gmail.com</a></strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <footer class="site-footer text-white">
+            <span>
+                <a href="https://www.facebook.com/cs.foothill" target="_blank">
+                    <i class="fa fa-2x fa-facebook-square"></i>
+                </a>
+            </span>
+            <h4 class="footer-text">Made by the <a href="https://cs.foothillstemclubs.org/">Foothill CS Club</a></h4>
+
+        </footer>
     </body>
 </html>

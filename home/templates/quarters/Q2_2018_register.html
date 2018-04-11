@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Coding Weekends - Contact Us</title>
+        {% load static %}
+        <link rel='icon' href="{% static 'home/images/CodingWeekend.png' %}">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' type='text/css' href="{% static 'home/css/home.css' %}"/>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="{% url 'home:about' %}" class='nav navLink'> About </a>
+                </div>
+                <div class="col">
+                    <a href="{% url 'home:home' %}"><img src="{% static 'home/images/CodingWeekend.png' %}" alt="My image" id='logo' class="nav"/></a>
+                </div>
+                <div class="col">
+                    <a href="{% url 'home:contact' %}" class='nav navLink'> Contact Us </a>
+                </div>
+            </div>
+        </div>
+
+        <header class="intro2 wrapper">
+            <div class="container text-white text-center">
+                <div class="text-group intro-content">
+                    <div class="logo-wrap">
+                        <span class="h1">Coding Weekend Spring 2018 - Registration</span>
+                    </div>
+                    <div class="text-group2">
+                        <p>
+                            <span class="h3">April 28 - 29, 2018<br/>10 AM to 8 PM</span><br/>
+                            <a style="text-decoration: none" href="https://goo.gl/maps/PHvMNZxfcsL2">
+                                <span class="h3">4700 building</span>
+                                <span class="h3">Foothill College, Los Altos, CA</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="w3-container" style="padding:48px 16px">
+            <div class="w3-row-padding">
+                <div class="w3-col m3">&nbsp;</div>
+                <div class="w3-col m6">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSceKcHBn6q4s0YQRcCr1IPXyGTzhGGZjJfqVGyt6Uxy480jLg/formResponse">
+                        <p>
+                            <label for="emailAddress">Email address <span class="required">*</span></label>
+                            <input type="email" class="w3-input w3-border quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="email" tabindex="0" aria-label="Your email" id="emailAddress" name="emailAddress" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                        </p>
+
+                        <p>
+                            <label for="fullName">Full name <span class="required">*</span></label>
+                            <input type="text" class="w3-input w3-border quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Full name" aria-describedby="i.desc.1740353112 i.err.1740353112" id="fullName" name="entry.79730745" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                        </p>
+
+                        <p>
+                            <label for="pplAccompanying">How many people will come with you? <span class="required">*</span></label>
+                            <input type="text" class="w3-input w3-border quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="How many people will come with you?" aria-describedby="i.desc.376206170 i.err.376206170" id="pplAccompanying" name="entry.562545898" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                        </p>
+
+                        <p>Are you a student at Foothill College? <span class="required">*</span><br/>
+                            <input type="radio" name="entry.1137388980" id="Yes" value="Yes" required/>
+                            <label for="Yes">Yes</label><br/>
+                            <input type="radio" name="entry.1137388980" id="No" value="No"/>
+                            <label for="No">No</label>
+                        </p>
+
+                        <p>Which workshops would you be interested in attending?<br/>
+                            <input type="checkbox" name="entry.771171167" id="a1" value="Introduction to HTML, CSS and Javascript"/>
+                            <label for="a1">Introduction to HTML, CSS and Javascript</label><br/>
+                            <input type="checkbox" name="entry.771171167" id="a2" value="Introduction to Python"/>
+                            <label for="a2">Introduction to Python</label><br/>
+                            <input type="checkbox" name="entry.771171167" id="a3" value="Introduction to Go">
+                            <label for="a3">Introduction to Go</label><br/>
+                            <input type="checkbox" name="entry.771171167" id="a4" value="Introduction to SQL">
+                            <label for="a4">Introduction to SQL</label><br/>
+                            <input type="checkbox" name="entry.771171167" id="a5" value="Basics of Git and Bash">
+                            <label for="a5">Basics of Git and Bash</label><br/>
+                            <input type="checkbox" name="entry.771171167" id="a5" value="Buffer Overflow">
+                            <label for="a5">Buffer Overflow</label>
+                        </p>
+
+                        <p>
+                            <label for="otherWorkshops">Any other workshops you'd be interested in?</label>
+                            <input type="text" class="w3-input w3-border quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Any other workshops you&amp;#39;d be interested in?" aria-describedby="i.desc.35400547 i.err.35400547" id="otherWorkshops" name="entry.915855182" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                        </p>
+
+                        <p>
+                            <label for="dietaryRestrictions">Please list your dietary restrictions</label>
+                            <input type="text" class="w3-input w3-border quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="If you have any dietary restrictions, please write them below." aria-describedby="i.desc.1452548770 i.err.1452548770" id="dietaryRestrictions" name="entry.1370283604" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                        </p>
+
+                        <p>
+                            <button class="w3-button w3-black" type="submit">SUBMIT</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="w3-col m3">&nbsp;</div>
+            </div>
+        </div>
+
+        <footer class="site-footer text-white">
+            <span>
+                <a href="https://www.facebook.com/cs.foothill" target="_blank">
+                    <i class="fa fa-2x fa-facebook-square"></i>
+                </a>
+            </span>
+            <h4 class="footer-text">Made by the <a href="https://cs.foothillstemclubs.org/">Foothill CS Club</a></h4>
+
+        </footer>
+    </body>
+</html>
