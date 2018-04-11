@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <title>Coding Weekends - Spring Quarter 2018</title>
+        {% load static %}
+        <link rel='icon' href="{% static 'home/images/CodingWeekend.png' %}">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:700" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href="{% static 'home/css/home.css' %}"/>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="{% url 'home:about' %}" class='nav navLink'> About </a>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <a href="{% url 'home:contact' %}" class='nav navLink' id='currentPage'> Contact Us </a>
+                </div>
+            </div>
+        </div>
+        <header class="intro wrapper">
+            <div class="container text-white text-center">
+                <div class="text-group intro-content">
+                    <div class="logo-wrap in-view">
+                        <a href="{% url 'home:home' %}"><img class="logo" src="{% static 'home/images/CodingWeekend.png' %}" alt="CW Logo - full"></a><br/>
+                        <span class="h1">Coding Weekend</span>
+                    </div>
+                    <div class="text-group2">
+                        <p>
+                            <span class="h3 in-view">April 28 - 29, 2018</span>
+                            <a style="text-decoration: none" href="https://goo.gl/maps/PHvMNZxfcsL2">
+                                <span class="h3">4700 building</span>
+                                <span class="h3">Foothill College</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="text-group__ft">
+                        <a class="btn" href="{% url 'home:Q2_2018_register' %}">APPLY</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </body>
+</html>

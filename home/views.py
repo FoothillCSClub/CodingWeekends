@@ -16,5 +16,7 @@ def Q1_2017(request):
 def Q3_2017(request):
     return render(request, 'home/Q3_2017.html',{})
 
-def Q1_2018(request):
-    return render(request, 'home/2018.html',{})
+def Q2_2018(request):
+    return render(request, 'quarters/Q2_2018.html',{})
+def Q2_2018_register(request):
+    return render(request, 'quarters/Q2_2018_register.html',{})

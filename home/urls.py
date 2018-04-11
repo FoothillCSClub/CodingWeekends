@@ -23,5 +23,6 @@ urlpatterns = [
     path('contact', views.contact, name = 'contact'),
     path('Q1_2017',views.Q1_2017, name = 'Q1_2017'),
     path('Q3_2017',views.Q3_2017, name = 'Q3_2017'),
-    path('2018', views.Q1_2018, name = '2018'),
+    path('Q2_2018', views.Q2_2018, name = 'Q2_2018'),
+    path('Q2_2018_register', views.Q2_2018_register, name = 'Q2_2018_register'),
 ]

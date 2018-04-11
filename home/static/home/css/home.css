@@ -129,14 +129,14 @@
 
 .fadeOut
 {
-  display: : none;
+  display: none;
   opacity: 0;
   transition: display 0s linear 300ms, opacity 300ms;
 }
 
 .fadeIn
 {
-  display: : block;
+  display: block;
   opacity: 1;
   transition: display 0s linear 0s, opacity 300ms;
 }
@@ -182,3 +182,69 @@
   color: rgb(249,249,249);
   font-family: 'Open Sans', sans-serif;
 }
+
+.intro .intro-content {
+  display: inline-block;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-wrap {
+  position: relative;
+  margin: 0 auto 50px;
+}
+
+.logo {
+  display: block;
+  max-width: 330px;
+  width: 50%;
+}
+
+.text-center p, .text-center img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-group2 {
+  margin-top: -1em;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #B4B7BA;
+}
+
+.text-group .text-group__ft {
+  margin-top: 20px;
+}
+
+.h3 {
+  display: block;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 2.0rem;
+  line-height: 1.85;
+}
+
+.wrapper {
+  background: #2E4A62;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #2E4A62;
+  overflow: hidden;
+  z-index: 2;
+  padding: 60px 0 150px;
+}
+

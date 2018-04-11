@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Coding Weekends - Contact Us</title>
+        {% load static %}
+        <link rel='icon' href="{% static 'home/images/CodingWeekend.png' %}">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:700" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' type='text/css' href="{% static 'home/css/contact.css' %}"/>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="{% url 'home:about' %}" class='nav navLink'> About </a>
+                </div>
+                <div class="col">
+                    <a href="{% url 'home:home' %}"><img src="{% static 'home/images/CodingWeekend.png' %}" alt="My image" id='logo' class="nav"/></a>
+                </div>
+                <div class="col">
+                    <a href="{% url 'home:contact' %}" class='nav navLink' id='currentPage'> Contact Us </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container" style="padding:48px 16px">
+            <div class="w3-row-padding">
+                <div class="w3-col m3">&nbsp;</div>
+                <div class="w3-col m6">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfUzgjRfRqB1V9DFwF6JFearj4KRpneceg7XXpPycrj6qy_XQ/formResponse">
+                        <p><input type="text" class="w3-input w3-border quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Name" aria-describedby="i.desc.739468433 i.err.739468433" name="entry.1830497564" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="* Name" ></p>
+                        <p><input type="email" class="w3-input w3-border quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.1709808371 i.err.1709808371" name="entry.16205053" value="" required="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="* Email"></p>
+                        <p><textarea class="w3-input w3-border quantumWizTextinputPapertextareaInput exportTextarea" jsname="YPqjbf" data-rows="1" tabindex="0" aria-label="Message" jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" required="" name="entry.1940883768" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="* Message" rows="4"></textarea></p>
+                        <p>
+                            <button class="w3-button w3-black" type="submit">SEND MESSAGE</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="w3-col m3">&nbsp;</div>
+            </div>
+        </div>
+    </body>
+</html>
