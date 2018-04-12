@@ -1,10 +1,9 @@
 var Q1_2017 = document.getElementsByClassName("Q1_2017")[0],
 Q3_2017 = document.getElementsByClassName("Q3_2017")[0],
-Q1_2018 = document.getElementsByClassName("Q1_2018")[0];
 
 hoverEventsWithPicsTop(Q1_2017);
 nextQuarterHoverEvents(Q3_2017, Q1_2017);
-futureEvents(Q1_2018, Q3_2017);
+futureEvents(Q3_2017);
 
 function hoverEventsWithPicsTop(div)
 {

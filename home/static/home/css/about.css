@@ -6,6 +6,13 @@
   margin: 0 0 0 0;
 }
 
+#helloLogo
+{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
 .nav{
   font-family: 'Montserrat', sans-serif;
   color: black;
@@ -60,4 +67,34 @@
 .col{
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.bgimg-4 {
+  background-position: center;
+  background-size: cover;
+  min-height: 100px;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+footer {
+  text-align: center;
+  background: #1A1F21;
+  font-size: 18px;
+  height: 120px;
+}
+
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1;
+  color: #E74F74;
+}
+
+.fa {
+  padding: 20px;
+  color: white;
 }
