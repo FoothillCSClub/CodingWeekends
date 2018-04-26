@@ -270,6 +270,13 @@ a:hover {
     animation: Gradient 15s ease infinite;
 }
 
+.another-gradient-background {
+    background: linear-gradient(-45deg, #23D5AB, #23A6D5, #E73C7E, #EE7752);
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
 .container-full {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
