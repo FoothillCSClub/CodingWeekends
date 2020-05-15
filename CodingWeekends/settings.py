@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bakery',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +120,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'temp', 'static')
+
+BUILD_DIR = os.path.join(BASE_DIR, 'build', 'dist')
+
+BAKERY_VIEWS = (
+    'home.views.HomeView',
+    'home.views.AboutView',
+    'home.views.ContactView',
+    'home.views.Q1_2017_View',
+    'home.views.Q3_2017_View',
+    'home.views.Q2_2018_View',
+    'home.views.Q2_2018_Register_View',
+)
