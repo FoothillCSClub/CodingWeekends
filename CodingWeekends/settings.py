@@ -121,9 +121,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'temp', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'static')
 
-BUILD_DIR = os.path.join(BASE_DIR, 'build', 'dist')
+# django-bakery configuration
+
+BUILD_DIR = os.path.join(BASE_DIR, 'build')
 
 BAKERY_VIEWS = (
     'home.views.HomeView',
@@ -134,3 +136,24 @@ BAKERY_VIEWS = (
     'home.views.Q2_2018_View',
     'home.views.Q2_2018_Register_View',
 )
+
+django_env = os.environ.get('DJANGO_ENV', '').lower()
+static_prefix = os.environ.get('STATIC_PREFIX')
+
+if django_env == 'production':
+    DEBUG = False
+
+if static_prefix:
+    STATIC_URL = f'{static_prefix}/static/'
+
+    # Monkey patch django's urls.reverse function to add a prefix path to URLs (ex. for GitHub pages deployment)
+    # Reference: https://github.com/datadesk/django-bakery/issues/26#issuecomment-68538016
+    import django.urls
+
+    old_reverse = django.urls.reverse
+
+    def reverse_patched(viewname, urlconf=None, args=None, kwargs=None, current_app=None):
+        url = old_reverse(viewname, urlconf, args, kwargs, current_app)
+        return static_prefix + url
+
+    setattr(django.urls, 'reverse', reverse_patched)

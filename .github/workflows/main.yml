@@ -22,13 +22,16 @@ jobs:
           pip install django django-bakery
 
       - name: Build 🔧
+        env:
+          DJANGO_ENV: production
+          STATIC_PREFIX: /CodingWeekends
         run: |
-          python manage.py build
+          python build.py
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: build/dist
+          FOLDER: build
           CLEAN: true
